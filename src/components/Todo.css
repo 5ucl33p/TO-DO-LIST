@@ -1,0 +1,114 @@
+/* src/components/Todo.css */
+
+.todo-list li.completed span {
+    text-decoration: line-through; /* Add line-through style for completed tasks */
+    color: gray; /* Optional: Change color for completed tasks */
+}
+.tick-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove border */
+    color: black; /* Default color */
+    font-size: 20px; /* Adjust size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 10px; /* Space between tick and text */
+  }
+  
+  /* Change color when task is completed */
+  .tick-button.ticked {
+    color: green; /* Optional: Change tick button color */
+  }
+  
+  .todo-list li.completed span {
+    text-decoration: line-through; /* Line-through style for completed tasks */
+    color: rgb(0, 255, 0); /* Change color for completed tasks */
+  }
+
+.todo-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .todo-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .todo-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-button:hover {
+    background-color: #218838;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .todo-list li.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .todo-list li span {
+    cursor: pointer;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
